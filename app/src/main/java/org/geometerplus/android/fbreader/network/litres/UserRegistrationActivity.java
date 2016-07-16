@@ -30,7 +30,7 @@ import android.widget.TextView;
 import org.geometerplus.zlibrary.core.network.ZLNetworkManager;
 import org.geometerplus.zlibrary.core.network.ZLNetworkException;
 import org.geometerplus.zlibrary.core.resources.ZLResource;
-import org.geometerplus.zlibrary.ui.android.R;
+import com.simon.reader.jinyong.R;
 
 public class UserRegistrationActivity extends RegistrationActivity {
 	private TextView findTextView(int resourceId) {

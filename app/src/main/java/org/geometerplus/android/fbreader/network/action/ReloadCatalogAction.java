@@ -20,7 +20,7 @@
 package org.geometerplus.android.fbreader.network.action;
 
 import org.geometerplus.zlibrary.core.network.ZLNetworkContext;
-import org.geometerplus.zlibrary.ui.android.R;
+import com.simon.reader.jinyong.R;
 
 import org.geometerplus.fbreader.network.*;
 import org.geometerplus.fbreader.network.tree.NetworkCatalogTree;

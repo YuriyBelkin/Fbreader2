@@ -27,7 +27,7 @@ import android.widget.*;
 
 import org.geometerplus.zlibrary.core.resources.ZLResource;
 
-import org.geometerplus.zlibrary.ui.android.R;
+import com.simon.reader.jinyong.R;
 
 import org.geometerplus.fbreader.Paths;
 import org.geometerplus.fbreader.tips.*;

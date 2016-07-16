@@ -27,7 +27,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
-import org.geometerplus.zlibrary.ui.android.R;
+import com.simon.reader.jinyong.R;
 import org.geometerplus.zlibrary.ui.android.network.SQLiteCookieDatabase;
 
 import org.geometerplus.fbreader.Paths;

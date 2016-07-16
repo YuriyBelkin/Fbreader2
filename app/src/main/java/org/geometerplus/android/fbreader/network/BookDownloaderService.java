@@ -32,7 +32,7 @@ import android.widget.Toast;
 import org.geometerplus.zlibrary.core.network.*;
 import org.geometerplus.zlibrary.core.resources.ZLResource;
 import org.geometerplus.zlibrary.core.util.MimeType;
-import org.geometerplus.zlibrary.ui.android.R;
+import com.simon.reader.jinyong.R;
 import org.geometerplus.zlibrary.ui.android.network.SQLiteCookieDatabase;
 
 import org.geometerplus.fbreader.network.urlInfo.UrlInfo;
