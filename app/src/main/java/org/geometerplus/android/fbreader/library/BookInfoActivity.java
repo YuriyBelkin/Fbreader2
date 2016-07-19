@@ -30,6 +30,7 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.*;
@@ -62,6 +63,7 @@ import org.geometerplus.android.util.OrientationUtil;
 public class BookInfoActivity extends Activity implements IBookCollection.Listener<Book> {
 	private static final boolean ENABLE_EXTENDED_FILE_INFO = false;
 
+
 	public static final String FROM_READING_MODE_KEY = "fbreader.from.reading.mode";
 
 	private final ZLResource myResource = ZLResource.resource("bookInfo");
@@ -78,11 +80,12 @@ public class BookInfoActivity extends Activity implements IBookCollection.Listen
 		Thread.setDefaultUncaughtExceptionHandler(
 			new org.geometerplus.zlibrary.ui.android.library.UncaughtExceptionHandler(this)
 		);
-
+		Log.d(FBReader.TAG,"BookInfoActivity conreate");
 		final Intent intent = getIntent();
 		myDontReloadBook = intent.getBooleanExtra(FROM_READING_MODE_KEY, false);
 		myBook = FBReaderIntents.getBookExtra(intent, myCollection);
-
+		//Log.d(FBReader.TAG,"BookInfoActivity mybook: " + myBook.getPath() + "-- "+myBook.getSeriesInfo().toString());
+		Log.d(FBReader.TAG,"BookInfoActivity mybook: " + myBook.getPath() );
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.book_info);
 	}
